@@ -1,4 +1,5 @@
 
+
 class Tool
 
 	def sign_in 
@@ -16,12 +17,10 @@ class Tool
 				text_length = text.split.length
 				puts "You're a happy person."
 				puts "Your text is #{text_length} words."
-				break
-			else
-				puts "ERROR 404"
-				break
+				return nil
 			end
-		end 
+		end
+		puts "Error !"
 	end	
 
 	def print
