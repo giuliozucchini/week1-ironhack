@@ -4,22 +4,22 @@ require 'date'
 
 # CREATION OF A BLOG
 class Blog
+
 attr_accessor :container
 
 	def initialize
-		@container = []
-		@position = 1
+	@container = []
 	end
 
 	def publish_front_page
 		@container = @container.sort_by {|post| post.date} #order posts by date
     	@container.reverse! #inverted order !
-    	posts_to_print = @container.slice(@position,@position + 1)
-		posts_to_print.each {|post| post.show_post}	# publish the post!
+		@container.each {|post| post.show_post}	# publish the post!
 	end
  end 
 
 # CREATION OF A POST
+
 class Post 	
 attr_accessor :date
 attr_accessor :title
@@ -42,6 +42,18 @@ class SponsoredPost < Post
 	@text = text
 	@date = date
 	end
+end
+
+class Page
+	
+	def initialize (page)
+	@page = page
+	end
+
+	def format
+	page = 
+	end
+
 end
 
 my_first_blog = Blog.new 
