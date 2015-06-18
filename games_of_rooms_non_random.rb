@@ -80,3 +80,7 @@ world=[cinema, norway, castle, gallery, disco, market]
 
 your_game.create_world(world)
 your_game.start
+
+
+
+HEEEYYYYYYYYYYYYYYY
