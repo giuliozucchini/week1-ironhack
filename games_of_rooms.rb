@@ -48,21 +48,15 @@ end
 class User
 
 bag = []
-
 	def put_in_the_bag
-
-		
 	end
-
 end
 
-class Item
 
+class Item
 	def initialize(item)
 		@item = item
-		
 	end
-
 end
 
 
